@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقارنة السياحة بين الدول</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 مقارنة السياحة بين الدول</h1>
+            <p>اكتشف الفروقات بين وجهاتك السياحية المفضلة</p>
+        </header>
+
+        <div class="selector-section">
+            <div class="country-selector">
+                <label for="country1">اختر الدولة الأولى:</label>
+                <select id="country1">
+                    <option value="">-- اختر دولة --</option>
+                </select>
+            </div>
+            <div class="country-selector">
+                <label for="country2">اختر الدولة الثانية:</label>
+                <select id="country2">
+                    <option value="">-- اختر دولة --</option>
+                </select>
+            </div>
+            <button onclick="compareCountries()">قارن الآن</button>
+        </div>
+
+        <div id="comparison" class="comparison-section"></div>
+    </div>
+
+    <script src="countries.json"></script>
+    <script src="script.js"></script>
+</body>
+</html>
